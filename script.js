@@ -120,7 +120,7 @@ logo.onAdd = function(map) {
   div.appendChild(logoImg);
   return div;
 };
-logo.addTo(map);
+
 
 // Mettre le logo au-dessus des autres éléments
 var logoContainer = logo.getContainer();
