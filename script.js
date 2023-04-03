@@ -101,3 +101,71 @@ $.getJSON("epci2.geojson", function(data) {
   });
   map.addControl(new toggleWhiteLayerButton());
 });
+
+// Définir les dimensions du logo
+var logoHeight = Math.round(window.innerWidth * 0.05);
+var logoWidth = Math.round((logoWidth / 255) * 785);
+
+// Créer l'élément d'image pour le logo
+var logoImg = L.DomUtil.create('img', 'leaflet-logo');
+logoImg.src = 'logo.jpg';
+logoImg.style.width = logoWidth + 'px';
+logoImg.style.height = logoHeight + 'px';
+logoImg.style.border = '1px solid black'; // Ajouter une bordure noire fine
+
+// Ajouter le logo à la carte
+var logo = L.control({ position: 'bottomleft' });
+logo.onAdd = function(map) {
+  var div = L.DomUtil.create('div', 'leaflet-logo-container');
+  div.appendChild(logoImg);
+  return div;
+};
+logo.addTo(map);
+
+// Mettre le logo au-dessus des autres éléments
+var logoContainer = logo.getContainer();
+logoContainer.style.zIndex = 9999;// Définir les dimensions du logo
+var logoHeight = Math.round(window.innerWidth * 0.05);
+var logoWidth = Math.round((logoWidth / 255) * 785);
+
+// Créer l'élément d'image pour le logo
+var logoImg = L.DomUtil.create('img', 'leaflet-logo');
+logoImg.src = 'logo.jpg';
+logoImg.style.width = logoWidth + 'px';
+logoImg.style.height = logoHeight + 'px';
+logoImg.style.border = '1px solid black'; // Ajouter une bordure noire fine
+
+// Ajouter le logo à la carte
+var logo = L.control({ position: 'bottomleft' });
+logo.onAdd = function(map) {
+  var div = L.DomUtil.create('div', 'leaflet-logo-container');
+  div.appendChild(logoImg);
+  return div;
+};
+logo.addTo(map);
+
+// Mettre le logo au-dessus des autres éléments
+var logoContainer = logo.getContainer();
+logoContainer.style.zIndex = 9999;// Définir les dimensions du logo
+var logoHeight = Math.round(window.innerWidth * 0.05);
+var logoWidth = Math.round((logoWidth / 255) * 785);
+
+// Créer l'élément d'image pour le logo
+var logoImg = L.DomUtil.create('img', 'leaflet-logo');
+logoImg.src = 'logo.jpg';
+logoImg.style.width = logoWidth + 'px';
+logoImg.style.height = logoHeight + 'px';
+logoImg.style.border = '1px solid black'; // Ajouter une bordure noire fine
+
+// Ajouter le logo à la carte
+var logo = L.control({ position: 'bottomleft' });
+logo.onAdd = function(map) {
+  var div = L.DomUtil.create('div', 'leaflet-logo-container');
+  div.appendChild(logoImg);
+  return div;
+};
+logo.addTo(map);
+
+// Mettre le logo au-dessus des autres éléments
+var logoContainer = logo.getContainer();
+logoContainer.style.zIndex = 9999;
